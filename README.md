@@ -20,6 +20,6 @@ Cześc jestem Dawid, zaczynam uczyć się programować i bardzo zależy mi na do
 Jestem świadom jak wiele cieżkiej pracy przed mną związanej ze zdobywaniem umiejętności ze świata IT, ale bardzo chciałbym się sprawdzić w tej dziedzinie. 
 Chce nauczyć się prawidłowych metod pisania codu w tym semantyki, przejrzystości i ogólonych reguł stosowanych przy pisaniu aplikacji internetowych czy też innego zastosowania programów.  
 Dotychczas skończyłem studia na politechnice łódzkiej związanych z projektowaniem sieci sanitarnych dla budynków (klimatyzacja, ogrzewanie, wod-kan, elektryka, itp). 
-Doświadczenie zawodowe oraz tym czym się zajmował opisuje w CV.
+Doświadczenie zawodowe oraz tym czym się zajmowałem zamieszczam w CV.
 
 Chciałybym zobaczyć jak wygląda praca w tym zawodzie i za parę lat mieć poczucię ze to była najlepsza decyzja jaką dokonałem.
