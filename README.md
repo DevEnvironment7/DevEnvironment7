@@ -23,3 +23,9 @@ Dotychczas skończyłem studia na politechnice łódzkiej związanych z projekto
 Doświadczenie zawodowe oraz tym czym się zajmowałem zamieszczam w CV.
 
 Chciałybym zobaczyć jak wygląda praca w tym zawodzie i za parę lat mieć poczucię ze to była najlepsza decyzja jaką dokonałem.
+
+Zdjęcia ze strony internetowej na której wykonałem CV. 
+Photos from the website where I made my CV.
+
+![First_page](https://user-images.githubusercontent.com/130925883/237051823-2fbe193c-27dd-467b-b7df-1faea70d972d.png)
+![Second_page](https://user-images.githubusercontent.com/130925883/237051830-dfde7ed4-68ec-43dd-9c6b-550048876cc7.png)
