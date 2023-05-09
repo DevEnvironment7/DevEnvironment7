@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Source+Sans+Pro:ital,wght@0,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Source+Sans+Pro:wght@200&display=swap");
+
+* {
+  /* font-family: "Lily Script One", cursive; */
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+#cointainer {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 0 125px rgba(8, 8, 8, 0.1);
+  margin: 10px;
+  list-style: none;
+  z-index: 1;
+}
+
+#cointainer2 {
+  position: absolute;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgb(0, 0, 0, 0.1);
+  margin: 50px;
+  list-style: none;
+  z-index: 0;
+}
+
+.cointainerActive {
+  transition: 1s;
+  transform: translateX(-2200px);
+}
+
+.leftSide {
+  position: relative;
+  background-color: rgb(235, 213, 142);
+  padding: 20px;
+  min-width: 300px;
+}
+
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+  color: #fff;
+}
+
+.imgBX {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+.imgBX img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40%;
+}
+
+.profileText h2 {
+  color: #fff;
+  font-size: 2em;
+  text-transform: none;
+  text-align: center;
+  font-weight: 800;
+  line-height: 1.4em;
+}
+
+.profileText h2 span {
+  font-size: 0.6em;
+  font-weight: 500;
+}
+
+.links li:hover {
+  transition: 1s;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.6);
+}
+
+.contactInfo li:hover {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.6);
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactInfo h3 {
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contactInfo a {
+  color: #000000;
+}
+.contactInfo ul {
+  position: relative;
+  list-style: none;
+  padding: 10px;
+}
+
+.contactInfo li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+.icon1 {
+  width: 30px;
+  font-size: 25px;
+  margin: 3px;
+}
+.icon {
+  width: 30px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+
+.icon i {
+  opacity: 0;
+  transition: 0.3s;
+  animation: slideleft 2s ease forwards;
+  animation-delay: 1.5s;
+  animation-delay: calc(0.3s * var(--i));
+}
+
+.icon1 i {
+  opacity: 0;
+  animation: slideleft 2s ease forwards;
+  animation-delay: calc(0.3s * var(--i));
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.links h3 {
+  display: flex;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.links li {
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.links a {
+  margin: 0 10px;
+  color: #000000;
+}
+
+.rightSide {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 700px;
+}
+.titleMid {
+  display: flex;
+  margin-top: 25px;
+}
+.titleMid img {
+  max-width: 110px;
+  max-height: 110px;
+  margin: 0 10px;
+}
+
+.titleMid ul {
+  display: flex;
+}
+
+.titleMid li {
+  width: 100%;
+  margin: 5px;
+  list-style: none;
+}
+
+.workSegment li {
+  margin: 5px 20px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Education {
+  font-size: 16px;
+  font-weight: 600;
+}
+.Education p {
+  margin: 8px 0;
+}
+.Education span {
+  margin: 8px 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.flag {
+  display: flex;
+}
+
+.flag img {
+  width: 20px;
+  height: 20px;
+}
+
+/* --------- Dots ----------- */
+
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotInHtml {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: #039be5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dotWord {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dotIncss {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: #ff6d00;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dotInjs {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(247, 223, 30);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .dotMg {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  border-right: 15px solid #bbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  after i rise skill node
+} */
+
+/* ----------------- button ---------- */
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Back:hover {
+  background-color: #209bcc;
+}
+
+.Next:hover {
+  background-color: #4caf50;
+}
+
+.Next {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0 50px;
+  margin-top: 70px;
+  background-color: rgb(247, 223, 30);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(34, 32, 51);
+  cursor: pointer;
+  transition: 0.5s;
+  border: 1px solid;
+}
+
+.Back {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0 50px;
+  margin-top: 70px;
+  background-color: rgb(247, 223, 30);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(51, 49, 32);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* =----------------Second side  ------------------------*/
+
+.jobVacancy {
+  font-size: 16px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.jobVacancy ul {
+  list-style: none;
+  margin-bottom: 8px;
+}
+.jobVacancy li {
+  margin: 10px 0;
+}
+
+.jobVacancy li:before {
+  content: "\f2bb"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin: 0 8px 0 0;
+}
+
+.siemens {
+  font-size: 16px;
+  font-weight: 600;
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.siemens:before {
+  content: "\f022"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin: 0 8px 0 0;
+}
+
+.paragraf {
+  font-size: 13px;
+  margin-top: 10px;
+}
+.paragraf li {
+  padding: 5px;
+  margin-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes slideleft {
+  0% {
+    transform: translateX(-600px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  #cointainer {
+    grid-template-columns: repeat(1, 2fr);
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  #cointainer2 {
+    grid-template-columns: repeat(1, 2fr);
+  }
+  .Links li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .titleMid ul {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .titleMid ul {
+    display: grid;
+    width: 100%;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 2fr));
+    gap: 15px;
+  }
+
+  .titleMid img {
+    display: grid;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 2fr));
+    gap: 15px;
+  }
+}
